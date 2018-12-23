@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/trainname"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:text="Train Name"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textSize="20dp"
+        android:text="(TrainNumber)"
+        android:id="@+id/trainnumber"
+        android:layout_below="@id/trainname"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_below="@id/trainnumber"
+        android:id="@+id/days"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            
+            android:textSize="20dp"
+            android:text="MON"
+            android:id="@+id/mon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            
+            android:text="TUE"
+            android:textSize="20dp"
+            android:id="@+id/tue"
+            android:layout_toRightOf="@id/mon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            
+            android:text="WED"
+            android:textSize="20dp"
+            android:id="@+id/wed"
+            android:layout_toRightOf="@id/tue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            
+            android:text="THU"
+            android:textSize="20dp"
+            android:id="@+id/thu"
+            android:layout_toRightOf="@id/wed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            
+            android:text="FRI"
+            android:textSize="20dp"
+            android:id="@+id/fri"
+            android:layout_toRightOf="@id/thu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            
+            android:text="SAT"
+            android:textSize="20dp"
+            android:id="@+id/sat"
+            android:layout_toRightOf="@id/fri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            
+            android:text="SUN"
+            android:textSize="20dp"
+            android:id="@+id/sun"
+            android:layout_toRightOf="@id/sat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/days"
+        android:id="@+id/daysresult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="40dp"
+
+            android:textSize="20dp"
+            android:text="Y"
+            android:id="@+id/monres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="35dp"
+
+            android:text="Y"
+            android:textSize="20dp"
+            android:id="@+id/tueres"
+            android:layout_toRightOf="@id/monres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="35dp"
+
+            android:text="Y"
+            android:textSize="20dp"
+            android:id="@+id/wedres"
+            android:layout_toRightOf="@id/tueres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="35dp"
+
+            android:text="Y"
+            android:textSize="20dp"
+            android:id="@+id/thures"
+            android:layout_toRightOf="@id/wedres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="35dp"
+
+            android:text="Y"
+            android:textSize="20dp"
+            android:id="@+id/frires"
+            android:layout_toRightOf="@id/thures"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="35dp"
+
+            android:text="Y"
+            android:textSize="20dp"
+            android:id="@+id/satres"
+            android:layout_toRightOf="@id/frires"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="35dp"
+            android:text="Y"
+            android:textSize="20dp"
+            android:id="@+id/sunres"
+            android:layout_toRightOf="@id/satres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_below="@id/daysresult"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/myrecyclerview"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+    
+</RelativeLayout>
